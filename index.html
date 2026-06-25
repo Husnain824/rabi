@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <title>PharmaPulse by Rabi — Pakistan Drug Intelligence</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text y='.9em' font-size='72' x='50%' text-anchor='middle' dominant-baseline='top' fill='white'>⚕</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
@@ -39,19 +40,19 @@
             gap:10px; position:relative; z-index:100; backdrop-filter:blur(12px);
         }
         .nav-logo { display:flex; align-items:center; gap:8px; flex-shrink:0; cursor:pointer; text-decoration:none; }
-        .nav-logo-icon { width:36px; height:36px; background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:700; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; box-shadow:0 4px 12px rgba(79,70,229,0.3); }
-        .nav-logo-text { font-family:'Plus Jakarta Sans',sans-serif; font-size:15px; font-weight:700; color:var(--text); letter-spacing:-0.3px; line-height:1.2; }
+        .nav-logo-icon { width:40px; height:40px; background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:700; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; box-shadow:0 4px 12px rgba(79,70,229,0.3); }
+        .nav-logo-text { font-family:'Plus Jakarta Sans',sans-serif; font-size:17px; font-weight:700; color:var(--text); letter-spacing:-0.3px; line-height:1.2; }
         .nav-logo-text span { color:var(--secondary); }
-        .nav-logo-by { font-size:9px; color:var(--primary-light); font-weight:600; letter-spacing:0.3px; }
-        .nav-logo-sub { font-size:8px; font-weight:500; color:var(--text3); letter-spacing:0.5px; text-transform:uppercase; }
+        .nav-logo-by { font-size:10px; color:var(--primary-light); font-weight:600; letter-spacing:0.3px; }
+        .nav-logo-sub { font-size:9px; font-weight:500; color:var(--text3); letter-spacing:0.5px; text-transform:uppercase; }
         .nav-spacer { flex:1; min-width:4px; }
 
         .nav-search-wrap { flex:1; max-width:520px; position:relative; min-width:100px; }
-        .nav-search { width:100%; padding:8px 70px 8px 36px; background:var(--bg3); border:1.5px solid var(--border); border-radius:10px; color:var(--text); font-size:14px; font-family:'Inter',sans-serif; outline:none; transition:all 0.3s; }
+        .nav-search { width:100%; padding:9px 76px 9px 38px; background:var(--bg3); border:1.5px solid var(--border); border-radius:10px; color:var(--text); font-size:14px; font-family:'Inter',sans-serif; outline:none; transition:all 0.3s; }
         .nav-search:focus { border-color:var(--primary); box-shadow:0 0 0 4px rgba(79,70,229,0.12); }
         .nav-search::placeholder { color:var(--text3); font-size:13px; }
         .nav-search-icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--text3); font-size:15px; pointer-events:none; }
-        .nav-search-go { position:absolute; right:4px; top:50%; transform:translateY(-50%); padding:4px 14px; background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border:none; border-radius:8px; color:#fff; font-size:12px; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s; }
+        .nav-search-go { position:absolute; right:4px; top:50%; transform:translateY(-50%); padding:5px 16px; background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border:none; border-radius:8px; color:#fff; font-size:12px; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s; }
         .nav-search-go:hover { transform:translateY(-50%) scale(1.04); box-shadow:0 4px 14px rgba(79,70,229,0.35); }
 
         .nav-sugg-drop {
@@ -87,7 +88,7 @@
         .nav-mode-btn.theme-btn { font-size:14px; padding:4px 8px; }
 
         /* Mobile hamburger */
-        .nav-hamburger { display:none; width:38px; height:38px; border:1px solid var(--border); border-radius:10px; background:transparent; color:var(--text2); cursor:pointer; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+        .nav-hamburger { display:none; width:38px; height:38px; border:1px solid var(--border); border-radius:10px; background:transparent; color:var(--text2); cursor:pointer; align-items:center; justify-content:center; font-size:20px; flex-shrink:0; }
 
         /* ─── MAIN ─── */
         .main-content { flex:1; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; padding:0 0 20px 0; }
@@ -114,15 +115,10 @@
         .hero-chip:hover { border-color:var(--primary-light); color:var(--primary-light); background:rgba(79,70,229,0.05); transform:translateY(-2px); }
         .hero-disclaimer { max-width:520px; margin-top:18px; padding:10px 16px; background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.12); border-radius:10px; font-size:12px; color:rgba(245,158,11,0.7); line-height:1.6; text-align:center; }
 
-        /* ─── DRUG PAGE ─── */
+        /* ─── DRUG PAGE (FLAT LAYOUT — no tabs) ─── */
         .drug-hero { background:linear-gradient(135deg,var(--bg3),var(--bg4)); border-bottom:1px solid var(--border); padding:20px 24px; position:relative; }
         .drug-hero-inner { max-width:960px; margin:0 auto; }
         .drug-row { display:flex; align-items:flex-start; gap:24px; flex-wrap:wrap; }
-        .drug-struct { width:130px; height:130px; flex-shrink:0; background:var(--card); border:2px solid var(--border2); border-radius:var(--radius); display:flex; align-items:center; justify-content:center; padding:10px; cursor:pointer; transition:all 0.3s; position:relative; overflow:hidden; }
-        .drug-struct:hover { border-color:var(--primary-light); transform:scale(1.04); box-shadow:var(--glow); }
-        .drug-struct svg { width:100%; height:100%; }
-        .drug-struct .zoom-hint { position:absolute; bottom:6px; right:6px; font-size:9px; background:rgba(0,0,0,0.5); color:#fff; padding:2px 8px; border-radius:4px; opacity:0; transition:opacity 0.2s; }
-        .drug-struct:hover .zoom-hint { opacity:1; }
         .drug-info { flex:1; min-width:0; }
         .drug-name { font-family:'Plus Jakarta Sans',sans-serif; font-size:36px; font-weight:800; color:var(--text); line-height:1.15; margin-bottom:4px; letter-spacing:-0.5px; }
         .drug-alias { font-size:15px; color:var(--primary-light); margin-bottom:4px; }
@@ -139,33 +135,29 @@
         .drug-act.primary-act { background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border-color:transparent; color:#fff; }
         .drug-act.primary-act:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(79,70,229,0.3); color:#fff; }
         .drug-act.fav-act { font-size:16px; padding:6px 10px; }
-        .drug-act.fav-act.not-fav { filter:grayscale(1) opacity:0.4; }
+        .drug-act.fav-act.not-fav { filter:grayscale(1) opacity(0.4); }
         .drug-act.fav-act:not(.not-fav) { color:var(--secondary); }
 
-        /* ─── TABS ─── */
-        .drug-tabs { display:flex; gap:2px; overflow-x:auto; padding:0 16px; background:var(--bg2); border-bottom:1px solid var(--border); flex-shrink:0; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
-        .drug-tabs::-webkit-scrollbar { display:none; }
-        .drug-tab { padding:10px 16px; font-size:12px; font-weight:600; color:var(--text3); cursor:pointer; white-space:nowrap; border-bottom:2.5px solid transparent; transition:all 0.2s; font-family:'Inter',sans-serif; letter-spacing:0.3px; text-transform:uppercase; }
-        .drug-tab:hover { color:var(--text2); }
-        .drug-tab.active { color:var(--primary-light); border-bottom-color:var(--primary); }
+        /* ─── FLAT DRUG CONTENT ─── */
+        .drug-content { max-width:960px; margin:0 auto; padding:24px 24px 60px; }
 
-        .drug-sections { max-width:960px; margin:0 auto; padding:20px 24px 40px; }
-        .drug-section { display:none; animation:fadeSlide 0.35s ease; }
-        .drug-section.active { display:block; }
-        @keyframes fadeSlide { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        /* mode badge */
+        .mode-banner { display:flex; align-items:center; gap:10px; padding:10px 16px; border-radius:10px; margin-bottom:20px; font-size:13px; font-weight:600; }
+        .mode-banner.pro { background:rgba(79,70,229,0.07); border:1px solid rgba(79,70,229,0.2); color:var(--primary-light); }
+        .mode-banner.lay { background:rgba(16,185,129,0.07); border:1px solid rgba(16,185,129,0.2); color:#34d399; }
 
-        .sec-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; margin-bottom:16px; box-shadow:var(--glow); }
-        .sec-head { display:flex; align-items:center; gap:10px; padding:12px 16px; border-bottom:1px solid var(--border); background:rgba(79,70,229,0.02); }
-        .sec-head .emoji { font-size:18px; }
-        .sec-head .title { font-size:15px; font-weight:700; color:var(--text); flex:1; }
-        .sec-head .accent-line { width:4px; height:24px; border-radius:2px; flex-shrink:0; }
-        .sec-body { padding:14px 18px; }
+        .sec-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; margin-bottom:20px; box-shadow:var(--glow); }
+        .sec-head { display:flex; align-items:center; gap:10px; padding:14px 18px; border-bottom:1px solid var(--border); background:rgba(79,70,229,0.02); }
+        .sec-head .emoji { font-size:20px; }
+        .sec-head .title { font-size:16px; font-weight:700; color:var(--text); flex:1; }
+        .sec-head .accent-line { width:4px; height:26px; border-radius:2px; flex-shrink:0; }
+        .sec-body { padding:16px 20px; }
         .sec-body p { font-size:14px; color:var(--text2); line-height:1.8; }
         .sec-body ul { list-style:none; padding:0; }
-        .sec-body li { padding:6px 0; font-size:14px; color:var(--text2); display:flex; gap:10px; align-items:flex-start; border-bottom:1px solid rgba(255,255,255,0.03); }
+        .sec-body li { padding:7px 0; font-size:14px; color:var(--text2); display:flex; gap:10px; align-items:flex-start; border-bottom:1px solid rgba(255,255,255,0.03); line-height:1.65; }
         .sec-body li:last-child { border:none; }
-        .sec-body li .dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; margin-top:7px; }
-        .sub-label { font-size:11px; font-weight:700; color:var(--text3); text-transform:uppercase; letter-spacing:0.8px; margin:12px 0 6px; }
+        .sec-body li .dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; margin-top:8px; }
+        .sub-label { font-size:11px; font-weight:700; color:var(--text3); text-transform:uppercase; letter-spacing:0.8px; margin:14px 0 7px; }
         .sub-label:first-child { margin-top:0; }
         .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
         .grid-item { background:var(--bg3); border:1px solid var(--border); border-radius:var(--radius-sm); padding:12px 14px; }
@@ -179,12 +171,12 @@
         .brand-card .bco { font-size:11px; color:var(--text3); }
         .brand-card .btags { display:flex; flex-wrap:wrap; gap:4px; margin-top:6px; }
         .brand-card .btag { padding:2px 8px; background:rgba(79,70,229,0.08); border:1px solid rgba(79,70,229,0.12); border-radius:8px; font-size:10px; color:var(--primary-light); font-weight:500; }
-        .int-row { display:flex; gap:10px; align-items:flex-start; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.03); }
+        .int-row { display:flex; gap:10px; align-items:flex-start; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.03); }
         .int-row:last-child { border:none; }
         .int-badge { padding:2px 10px; border-radius:8px; font-size:10px; font-weight:700; flex-shrink:0; margin-top:2px; }
         .int-major { background:rgba(244,114,182,0.12); color:#f472b6; border:1px solid rgba(244,114,182,0.2); }
         .int-mod { background:rgba(245,158,11,0.12); color:#fbbf24; border:1px solid rgba(245,158,11,0.2); }
-        .int-txt { font-size:14px; color:var(--text2); }
+        .int-txt { font-size:14px; color:var(--text2); line-height:1.6; }
         .faq-item { border-bottom:1px solid var(--border); padding:12px 0; }
         .faq-item:first-child { padding-top:0; }
         .faq-item:last-child { border:none; padding-bottom:0; }
@@ -193,24 +185,24 @@
         .faq-q .arrow.open { transform:rotate(180deg); }
         .faq-a { font-size:14px; color:var(--text2); line-height:1.7; padding-top:8px; display:none; }
         .faq-a.open { display:block; }
-        .ref-item { display:flex; gap:10px; padding:8px 12px; margin:4px 0; background:rgba(79,70,229,0.04); border-left:3px solid var(--primary-light); border-radius:8px; font-size:13px; color:var(--text3); transition:all 0.2s; align-items:center; }
+        .ref-item { display:flex; gap:10px; padding:8px 12px; margin:4px 0; background:rgba(79,70,229,0.04); border-left:3px solid var(--primary-light); border-radius:8px; font-size:13px; color:var(--text3); transition:all 0.2s; align-items:flex-start; }
         .ref-item:hover { background:rgba(79,70,229,0.07); }
-        .ref-item .num { color:var(--primary-light); font-weight:700; flex-shrink:0; min-width:22px; font-size:11px; }
+        .ref-item .num { color:var(--primary-light); font-weight:700; flex-shrink:0; min-width:22px; font-size:11px; padding-top:1px; }
         .ref-item a { color:var(--primary-light); text-decoration:none; font-weight:500; border-bottom:1.5px solid rgba(79,70,229,0.2); transition:all 0.2s; }
         .ref-item a:hover { border-bottom-color:var(--primary-light); color:var(--secondary); }
-        .disclaimer-box { background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.15); border-radius:var(--radius-sm); padding:12px 14px; margin-top:10px; }
+        .disclaimer-box { background:rgba(245,158,11,0.05); border:1px solid rgba(245,158,11,0.15); border-radius:var(--radius-sm); padding:12px 14px; margin-top:12px; }
         .disclaimer-box p { font-size:12px; color:rgba(245,158,11,0.7); line-height:1.7; }
 
-        /* ─── STRUCTURE VIEWER ─── */
-        .structure-viewer { display:flex; flex-direction:column; align-items:center; gap:14px; padding:6px 0; }
+        /* ─── STRUCTURE SECTION ─── */
+        .structure-viewer { display:flex; flex-direction:column; align-items:center; gap:14px; padding:4px 0; }
         .structure-viewer .toggle-group { display:flex; gap:10px; background:var(--bg3); padding:4px; border-radius:10px; border:1px solid var(--border); }
-        .structure-viewer .toggle-btn { padding:6px 20px; border:none; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.2s; background:transparent; color:var(--text3); font-family:'Inter',sans-serif; }
+        .structure-viewer .toggle-btn { padding:7px 24px; border:none; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.2s; background:transparent; color:var(--text3); font-family:'Inter',sans-serif; }
         .structure-viewer .toggle-btn.active { background:linear-gradient(135deg,var(--primary),var(--purple-deep)); color:#fff; box-shadow:0 2px 10px rgba(79,70,229,0.25); }
-        .structure-viewer .img-container { width:100%; min-height:280px; display:flex; justify-content:center; align-items:center; background:var(--bg3); border:1px solid var(--border); border-radius:var(--radius-sm); overflow:hidden; position:relative; }
-        .structure-viewer .img-container img { max-width:100%; max-height:400px; display:none; object-fit:contain; }
+        .structure-viewer .img-container { width:100%; min-height:300px; display:flex; justify-content:center; align-items:center; background:var(--bg3); border:1px solid var(--border); border-radius:var(--radius-sm); overflow:hidden; position:relative; }
+        .structure-viewer .img-container img { max-width:100%; max-height:420px; display:none; object-fit:contain; }
         .structure-viewer .img-container .placeholder { color:var(--text3); font-size:14px; text-align:center; padding:20px; }
         .structure-viewer .img-container .spinner { width:36px; height:36px; border:3px solid var(--border); border-top-color:var(--primary-light); border-radius:50%; animation:spin 0.7s linear infinite; display:none; }
-        .structure-viewer .img-container iframe { width:100%; height:450px; border:none; border-radius:8px; display:none; }
+        .structure-viewer .img-container iframe { width:100%; height:480px; border:none; border-radius:8px; display:none; }
         .structure-viewer .viewer-credit { font-size:11px; color:var(--text3); text-align:center; margin-top:4px; }
         .structure-viewer .viewer-credit a { color:var(--primary-light); text-decoration:none; border-bottom:1px solid rgba(79,70,229,0.2); }
 
@@ -266,7 +258,7 @@
         .mcq-loading { text-align:center; padding:36px 20px; }
         .mcq-loading .spinner { width:40px; height:40px; border:3px solid var(--border); border-top-color:var(--primary-light); border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 14px; }
 
-        /* ─── COMPARE PAGE (new full-page layout like MCQ) ─── */
+        /* ─── COMPARE PAGE ─── */
         .compare-container { max-width:860px; margin:0 auto; padding:24px 20px 40px; }
         .compare-header { display:flex; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap; }
         .compare-header .back { padding:6px 14px; background:var(--card); border:1px solid var(--border); border-radius:10px; color:var(--text2); cursor:pointer; font-size:13px; display:flex; align-items:center; gap:6px; transition:all 0.2s; font-family:'Inter',sans-serif; font-weight:500; }
@@ -307,7 +299,7 @@
         .pill-finder .search-row { display:flex; gap:10px; flex-wrap:wrap; }
         .pill-finder .search-row input { flex:1; min-width:180px; padding:12px 16px; background:var(--bg3); border:1.5px solid var(--border2); border-radius:10px; color:var(--text); font-size:15px; font-family:'Inter',sans-serif; outline:none; transition:all 0.3s; }
         .pill-finder .search-row input:focus { border-color:var(--primary); box-shadow:0 0 0 4px rgba(79,70,229,0.08); }
-        .pill-finder .search-row button { padding:12px 28px; background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border:none; border-radius:10px; color:#fff; font-weight:700; font-size:14px; cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s; box-shadow:0 4px 14px rgba(79,70,229,0.3); }
+        .pill-finder .search-row button { padding:12px 28px; background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border:none; border-radius:10px; color:#fff; font-weight:700; font-size:14px; cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s; }
         .pill-finder .search-row button:hover { transform:translateY(-2px); box-shadow:0 6px 24px rgba(79,70,229,0.4); }
         .pill-finder .examples { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
         .pill-finder .examples .chip { font-size:11px; padding:3px 10px; background:var(--bg3); border:1px solid var(--border); border-radius:14px; color:var(--text3); cursor:pointer; transition:all 0.2s; }
@@ -339,7 +331,7 @@
         .drawer-empty .big { font-size:32px; opacity:0.2; margin-bottom:8px; }
         .drawer-empty p { font-size:12px; line-height:1.6; }
 
-        /* Mobile sidebar — menu items */
+        /* Mobile sidebar */
         .mobile-menu-item { display:flex; align-items:center; gap:12px; padding:11px 14px; border-radius:10px; cursor:pointer; transition:all 0.15s; border:1px solid transparent; margin-bottom:3px; font-size:14px; font-weight:500; color:var(--text2); }
         .mobile-menu-item:hover { background:rgba(79,70,229,0.05); border-color:var(--border); color:var(--text); }
         .mobile-menu-item .ico { font-size:18px; }
@@ -348,61 +340,49 @@
         .mobile-mode-toggle button { flex:1; padding:8px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text3); cursor:pointer; font-size:12px; font-weight:600; font-family:'Inter',sans-serif; transition:all 0.2s; }
         .mobile-mode-toggle button.active { background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border-color:transparent; color:#fff; }
 
-        /* ─── STRUCT MODAL ─── */
-        .struct-modal { position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:400; display:flex; align-items:center; justify-content:center; padding:20px; backdrop-filter:blur(8px); animation:fadeIn 0.25s ease; }
-        .struct-modal .box { background:var(--bg2); border:1px solid var(--border2); border-radius:18px; padding:24px; max-width:460px; width:100%; max-height:90vh; overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,0.6); }
-        .struct-modal .box .close { float:right; background:none; border:1px solid var(--border); border-radius:6px; width:30px; height:30px; cursor:pointer; color:var(--text3); font-size:14px; display:flex; align-items:center; justify-content:center; transition:all 0.2s; }
-        .struct-modal .box .close:hover { border-color:var(--rose); color:var(--rose); }
-        .struct-modal .box .sname { font-family:'Plus Jakarta Sans',sans-serif; font-size:20px; font-weight:700; color:var(--primary-light); margin-bottom:2px; }
-        .struct-modal .box .sclass { font-size:12px; color:var(--text3); margin-bottom:14px; }
-        .struct-modal .box .svg-wrap { background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:16px; display:flex; justify-content:center; margin-bottom:14px; }
-        .struct-modal .box .svg-wrap svg { width:200px; height:200px; }
-        .struct-modal .box .actions { display:flex; gap:8px; }
-        .struct-modal .box .actions button { flex:1; padding:8px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text2); cursor:pointer; font-size:12px; font-weight:600; font-family:'Inter',sans-serif; transition:all 0.2s; }
-        .struct-modal .box .actions button:hover { border-color:var(--primary-light); color:var(--primary-light); }
-        .struct-modal .box .actions .primary { background:linear-gradient(135deg,var(--primary),var(--purple-deep)); border-color:transparent; color:#fff; }
-        @keyframes fadeIn { from{opacity:0;transform:scale(0.95)} to{opacity:1;transform:scale(1)} }
-        @keyframes spin { to { transform:rotate(360deg); } }
-
         /* ─── STATS MODAL ─── */
         .stats-modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:400; display:flex; align-items:center; justify-content:center; padding:20px; backdrop-filter:blur(8px); animation:fadeIn 0.25s ease; }
         .stats-modal-box { background:var(--bg2); border:1px solid var(--border2); border-radius:18px; padding:24px; max-width:480px; width:100%; max-height:88vh; overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,0.6); }
+
+        @keyframes fadeSlide { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        @keyframes fadeIn { from{opacity:0;transform:scale(0.95)} to{opacity:1;transform:scale(1)} }
+        @keyframes spin { to { transform:rotate(360deg); } }
 
         /* ─── RESPONSIVE ─── */
         @media(max-width:820px) {
             .nav-actions { display:none; }
             .nav-hamburger { display:flex; }
             .drug-row { flex-direction:column; gap:14px; }
-            .drug-struct { width:100%; height:120px; max-width:100%; }
             .drug-name { font-size:28px; }
             .grid-2 { grid-template-columns:1fr; }
             .mcq-quiz .opts { grid-template-columns:1fr; }
             .brand-grid { grid-template-columns:1fr 1fr; }
             .hero-title { font-size:34px; }
-            .drug-sections { padding:16px 14px 30px; }
+            .drug-content { padding:16px 14px 40px; }
             .drug-hero { padding:16px 18px; }
             .compare-drugs-row { grid-template-columns:1fr; }
-            .structure-viewer .img-container iframe { height:350px; }
+            .structure-viewer .img-container iframe { height:360px; }
         }
         @media(max-width:480px) {
             .nav-logo-sub { display:none; }
+            .nav-logo-text { display:none; }
+            .nav-logo-by { display:none; }
             .nav-search-wrap { min-width:80px; }
-            .nav-search { font-size:12px; padding:7px 60px 7px 32px; }
+            .nav-search { font-size:13px; padding:8px 64px 8px 36px; }
             .hero-title { font-size:28px; }
             .drug-name { font-size:24px; }
             .drug-act span { display:none; }
-            .drug-tab { font-size:10px; padding:8px 12px; }
             .brand-grid { grid-template-columns:1fr; }
             .mcq-container, .compare-container { padding:16px 12px 30px; }
             .compare-result-box { padding:14px; }
             .compare-table td, .compare-table th { padding:8px 8px; font-size:12px; }
         }
         @media print {
-            .top-nav, .drawer-overlay, .drawer, .drug-actions, .drug-tabs { display:none !important; }
+            .top-nav, .drawer-overlay, .drawer, .drug-actions, .mode-banner { display:none !important; }
             .app, .main-content { display:block; height:auto; overflow:visible; }
             .drug-hero { background:#f5f5f5 !important; border-bottom:1px solid #ddd; padding:16px; }
             .drug-name { color:#111 !important; -webkit-text-fill-color:#111 !important; }
-            .sec-card { border:1px solid #ddd; break-inside:avoid; box-shadow:none !important; }
+            .sec-card { border:1px solid #ddd; break-inside:avoid; box-shadow:none !important; margin-bottom:12px; }
         }
     </style>
 </head>
@@ -446,8 +426,8 @@
             </div>
         </div>
 
-        <!-- Mobile hamburger -->
-        <button class="nav-hamburger" onclick="openMobileMenu()" title="Menu">☰</button>
+        <!-- Mobile hamburger (just 3 dots icon) -->
+        <button class="nav-hamburger" onclick="openMobileMenu()" title="Menu">⋮</button>
     </nav>
 
     <main class="main-content" id="mainContent"></main>
@@ -551,10 +531,10 @@ function updateBadges(){
     if(f){ const n=loadFavorites().length; f.textContent=n>99?'99+':n; f.style.display=n>0?'flex':'none'; }
 }
 
-// ─── MOBILE MENU (sidebar) ────────────────────────
+// ─── MOBILE MENU ─────────────────────────────────
 function openMobileMenu(){
     S.drawerTab='mobile-menu';
-    document.getElementById('drawerTitle').textContent='☰ Menu';
+    document.getElementById('drawerTitle').textContent='Menu';
     const body=document.getElementById('drawerBody');
     const hist=S.history.length; const favs=loadFavorites().length;
     body.innerHTML=`
@@ -638,7 +618,7 @@ function renderLanding(){
         <div class="hero-title">PharmaPulse</div>
         <div class="hero-by">by Rabi</div>
         <div class="hero-sub">Intelligent drug information for clinicians &amp; students</div>
-        <div class="hero-tag">Search by generic, brand, salt, or therapeutic class</div>
+        <div class="hero-tag">Search by generic name, brand, salt, or therapeutic class</div>
         <div class="hero-stats">
           <div class="hero-stat"><div class="num">${stats.total}</div><div class="lbl">Searches</div></div>
           <div class="hero-stat"><div class="num">${stats.unique}</div><div class="lbl">Drugs</div></div>
@@ -682,7 +662,6 @@ async function showNavSugg(val){
     }catch(err){ dd.innerHTML='<div style="padding:10px;color:var(--text3);text-align:center;font-size:13px;">⚠ Error</div>'; }
 }
 
-// FIX: select suggestion + immediately search + hide dropdown
 function selectSuggAndSearch(name){
     const inp=document.getElementById('navSearch');
     if(inp) inp.value=name;
@@ -698,7 +677,7 @@ function onNavKey(e){
     const items=dd?dd.querySelectorAll('.nav-sugg-item'):[];
     if(e.key==='ArrowDown'){ e.preventDefault(); navSuggIdx=Math.min(navSuggIdx+1,items.length-1); hlNavSugg(items); }
     else if(e.key==='ArrowUp'){ e.preventDefault(); navSuggIdx=Math.max(navSuggIdx-1,-1); hlNavSugg(items); }
-    else if(e.key==='Enter'){ e.preventDefault(); if(navSuggIdx>=0&&items[navSuggIdx]){ const name=items[navSuggIdx].querySelector('strong')?.parentNode?.textContent?.trim()||''; selectSuggAndSearch(items[navSuggIdx].dataset.name||document.getElementById('navSearch').value.trim()); }else triggerNavSearch(); }
+    else if(e.key==='Enter'){ e.preventDefault(); if(navSuggIdx>=0&&items[navSuggIdx]){ selectSuggAndSearch(items[navSuggIdx].dataset.name||document.getElementById('navSearch').value.trim()); }else triggerNavSearch(); }
     else if(e.key==='Escape') hideNavSugg();
 }
 function hlNavSugg(items){ items.forEach((it,i)=>it.classList.toggle('sel',i===navSuggIdx)); }
@@ -706,7 +685,7 @@ function triggerNavSearch(){
     const inp=document.getElementById('navSearch');
     const q=inp?inp.value.trim():S.query.trim();
     if(!q) return;
-    hideNavSugg(); // always hide on search
+    hideNavSugg();
     doSearch(q);
 }
 function highlight(name,q){
@@ -739,38 +718,48 @@ async function doSearch(query){
     S.openFAQs={}; MCQ.active=false;
     const inp=document.getElementById('navSearch');
     if(inp) inp.value=query;
-    hideNavSugg(); // ensure hidden
+    hideNavSugg();
     renderLoading(query);
     try{
-        const data=await fetchDrugInfo(query);
-        S.currentDrug=data;
-        addToHistory(data.medicine_name||query);
-        trackSearch(data.medicine_name||query);
-        renderDrugPage(data);
+        // TWO parallel calls: one for professional, one for layman
+        const [dataPro, dataLay] = await Promise.all([
+            fetchDrugInfo(query, 'professional'),
+            fetchDrugInfo(query, 'layman')
+        ]);
+        S.currentDrug = dataPro;
+        S.currentDrugLay = dataLay;
+        addToHistory(dataPro.medicine_name||query);
+        trackSearch(dataPro.medicine_name||query);
+        renderDrugPage(S.mode === 'professional' ? dataPro : dataLay);
     }catch(err){ renderError(err.message||'Unknown error',query); }
     finally{ updateBadges(); }
 }
 function addToHistory(name){
     S.history=S.history.filter(h=>h.name.toLowerCase()!==name.toLowerCase());
-    S.history.unshift({name,time:Date.now(),data:S.currentDrug});
+    S.history.unshift({name,time:Date.now(),data:S.currentDrug,dataLay:S.currentDrugLay});
     if(S.history.length>40) S.history=S.history.slice(0,40);
     saveHistory(); updateBadges();
 }
 
 // ─── FETCH DRUG INFO ─────────────────────────────────
-async function fetchDrugInfo(query){
-    const modeInstr=S.mode==='layman'?'Use simple, patient-friendly Urdu/English mixed. Avoid heavy jargon.':'Use proper clinical/pharmacological terminology for professionals.';
-    const prompt=`You are an expert clinical pharmacologist specializing in medicines in Pakistan.
+async function fetchDrugInfo(query, mode){
+    const modeInstr = mode === 'layman'
+        ? 'Use simple, patient-friendly language. Explain like talking to a patient. Avoid heavy jargon. Use layman English. Keep it warm and easy to understand.'
+        : 'Use precise clinical and pharmacological terminology appropriate for healthcare professionals, pharmacists, and medical students.';
+
+    const prompt=`You are an expert clinical pharmacologist specializing in medicines used in Pakistan.
 ${modeInstr}
 User searches: "${query}"
-Return ONLY valid JSON. No markdown. No backticks.
+Return ONLY valid JSON. No markdown. No backticks. No extra text.
 {"medicine_name":"official generic name","aliases":["brand1","brand2"],"drug_class":"pharmacological class","overview":{"summary":"2-3 sentence overview","key_points":["point1","point2","point3","point4"]},"therapeutic_uses":["use1","use2","use3","use4","use5"],"adverse_reactions":{"common":["effect1","effect2","effect3"],"serious":["effect1","effect2"],"seek_medical_help_when":["situation1","situation2"]},"contraindications":{"absolute":["ci1","ci2"],"cautions":["caution1","caution2","caution3"]},"mechanism_of_action":"clear explanation","pharmacokinetics_pharmacodynamics":{"absorption":"details","distribution":"details","metabolism":"details","elimination":"details","half_life":"X hours","pharmacodynamics_notes":"notes"},"adult_dosing":["Indication: dose regimen"],"pediatric_dosing":["Age/weight: dose regimen"],"drug_interactions":{"major":["Drug X: effect"],"moderate":["Drug A: effect"],"administration_notes":["note1","note2"]},"pregnancy_lactation":{"pregnancy":"FDA category and details","lactation":"details"},"renal_hepatic_considerations":{"renal":"dose adjustment notes","hepatic":"hepatic caution notes"},"monitoring_parameters":["param1","param2","param3"],"counseling_points":["point1","point2","point3","point4","point5"],"pakistan_brand_names":[{"brand":"BrandName","strengths":["250mg","500mg"],"company":"CompanyName","dosage_forms":["tablet","capsule"]}],"related_clinical_case":{"scenario":"brief realistic case","discussion":"why this drug was chosen","pearls":["pearl1","pearl2","pearl3"]},"faq":[{"question":"Q1?","answer":"A1"},{"question":"Q2?","answer":"A2"},{"question":"Q3?","answer":"A3"},{"question":"Q4?","answer":"A4"},{"question":"Q5?","answer":"A5"},{"question":"Q6?","answer":"A6"}],"references":["Ref1","Ref2","Ref3","Ref4","Ref5"],"safety_disclaimer":"Educational use only."}
 Include 5-8 realistic Pakistan brands. Use companies like Getz, AGP, Hilton, Abbott, Pfizer, Sanofi, Novartis, GSK, Adamjee, Ferozsons, Highnoon, Searle, Martin Dow.
 Return ONLY the JSON object.`;
+
     const data=await callGroqViaWorker({messages:[{role:'user',content:prompt}],max_tokens:CONFIG.MAX_TOKENS,temperature:0.2});
     const raw=data.choices?.[0]?.message?.content||'';
     return safeParseJSON(raw,query);
 }
+
 function safeParseJSON(raw,query){
     let txt=raw.trim().replace(/^```json\s*/i,'').replace(/^```\s*/,'').replace(/\s*```$/,'').trim();
     const s=txt.indexOf('{'),e=txt.lastIndexOf('}');
@@ -783,95 +772,77 @@ function safeParseJSON(raw,query){
 
 // ─── LOADING / ERROR ─────────────────────────────────
 function renderLoading(query){
-    document.getElementById('mainContent').innerHTML=`<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:55vh;padding:40px 20px;gap:16px;"><div style="width:44px;height:44px;border:3px solid var(--border);border-top-color:var(--primary-light);border-radius:50%;animation:spin 0.8s linear infinite;"></div><div style="font-size:16px;font-weight:600;color:var(--text);">Searching: "<strong>${esc(query)}</strong>"</div><div style="font-size:14px;color:var(--text3);">Consulting clinical references &amp; Pakistan formulary…</div></div>`;
+    document.getElementById('mainContent').innerHTML=`<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:55vh;padding:40px 20px;gap:16px;"><div style="width:44px;height:44px;border:3px solid var(--border);border-top-color:var(--primary-light);border-radius:50%;animation:spin 0.8s linear infinite;"></div><div style="font-size:16px;font-weight:600;color:var(--text);">Fetching: "<strong>${esc(query)}</strong>"</div><div style="font-size:14px;color:var(--text3);">Running dual-mode analysis — Professional &amp; Layman simultaneously…</div></div>`;
 }
 function renderError(msg,query){
     document.getElementById('mainContent').innerHTML=`<div style="max-width:450px;margin:50px auto;background:rgba(244,114,182,0.06);border:1px solid rgba(244,114,182,0.2);border-radius:var(--radius);padding:28px;text-align:center;"><div style="font-size:36px;margin-bottom:8px;">⚠️</div><div style="font-size:16px;font-weight:700;color:#f472b6;margin-bottom:6px;">Search Failed</div><div style="font-size:13px;color:var(--text3);margin-bottom:16px;">${esc(msg)}</div><div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;"><button onclick="doSearch('${esc(query)}')" style="padding:8px 20px;background:rgba(79,70,229,0.08);border:1px solid rgba(79,70,229,0.2);border-radius:8px;color:var(--primary-light);cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;">↺ Retry</button><button onclick="newSearch()" style="padding:8px 20px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--text2);cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;">← New Search</button></div></div>`;
 }
 
-// ─── DRUG PAGE ───────────────────────────────────────
+// ─── DRUG PAGE (FLAT — no tabs, all sections in sequence) ────
 function renderDrugPage(d){
     const c=document.getElementById('mainContent');
-    c.innerHTML=`${buildDrugHero(d)}${buildDrugTabs()}<div class="drug-sections" id="drugSections">${buildOverview(d)}${buildUses(d)}${buildMechanism(d)}${buildPKPD(d)}${buildAdverse(d)}${buildContraindications(d)}${buildAdultDosing(d)}${buildPediatricDosing(d)}${buildInteractions(d)}${buildPakBrands(d)}${buildPregnancy(d)}${buildRenalHepatic(d)}${buildCounseling(d)}${buildMonitoring(d)}${buildClinicalCase(d)}${buildFAQ(d)}${buildStructure(d)}${buildRefs(d)}<div id="mcqCont"></div></div>`;
-    const firstTab=document.querySelector('.drug-tab');
-    if(firstTab) firstTab.classList.add('active');
-    const firstSection=document.querySelector('.drug-section');
-    if(firstSection) firstSection.classList.add('active');
+    const isPro = S.mode === 'professional';
+    c.innerHTML=`
+        ${buildDrugHero(d)}
+        <div class="drug-content">
+            <div class="mode-banner ${isPro?'pro':'lay'}">
+                ${isPro ? '🔬 Professional Mode — Clinical & pharmacological terminology' : '💬 Layman Mode — Simple patient-friendly language'}
+                <button onclick="setMode('${isPro?'layman':'professional'}')" style="margin-left:auto;padding:3px 14px;border-radius:7px;border:1px solid currentColor;background:transparent;color:currentColor;cursor:pointer;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;">Switch to ${isPro?'Layman':'Professional'}</button>
+            </div>
+            ${buildOverview(d)}
+            ${buildUses(d)}
+            ${buildMechanism(d)}
+            ${buildPKPD(d)}
+            ${buildAdverse(d)}
+            ${buildContraindications(d)}
+            ${buildAdultDosing(d)}
+            ${buildPediatricDosing(d)}
+            ${buildInteractions(d)}
+            ${buildPakBrands(d)}
+            ${buildPregnancy(d)}
+            ${buildRenalHepatic(d)}
+            ${buildCounseling(d)}
+            ${buildMonitoring(d)}
+            ${buildClinicalCase(d)}
+            ${buildFAQ(d)}
+            ${buildStructureSection(d)}
+            ${buildRefs(d)}
+            <div id="mcqCont"></div>
+        </div>`;
     updateBadges(); closeDrawer();
     document.getElementById('mainContent').scrollTop=0;
-    setTimeout(()=>{ const name=S.currentDrug?.medicine_name; if(name) loadStructure(name,'2d'); },300);
+    setTimeout(()=>{ const name=S.currentDrug?.medicine_name; if(name) loadStructure(name,'2d'); },400);
 }
 
-// ─── STRUCTURE ────────────────────────────────────────
-function buildStructure(d){
-    const name=d.medicine_name||'';
-    return `<div class="drug-section" id="sec-structure"><div class="sec-card"><div class="sec-head"><div class="accent-line" style="background:#a855f7;"></div><span class="emoji">🧪</span><span class="title">Chemical Structure (2D / 3D Interactive)</span></div><div class="sec-body"><div class="structure-viewer"><div class="toggle-group"><button class="toggle-btn active" id="struct2D" onclick="switchStructureView('2d')">2D Image</button><button class="toggle-btn" id="struct3D" onclick="switchStructureView('3d')">3D Interactive</button></div><div class="img-container" id="structImgContainer"><div class="placeholder" id="structPlaceholder">Loading structure from PubChem...</div><div class="spinner" id="structSpinner"></div><img id="structImage" src="" alt="Chemical Structure" /><iframe id="structIframe" src="" allowfullscreen></iframe></div><div class="viewer-credit">Source: PubChem | <a href="https://pubchem.ncbi.nlm.nih.gov/compound/${encodeURIComponent(name)}" target="_blank">View on PubChem ↗</a></div></div></div></div></div>`;
-}
-let currentStructView='2d';
-async function switchStructureView(view){
-    currentStructView=view;
-    document.getElementById('struct2D').classList.toggle('active',view==='2d');
-    document.getElementById('struct3D').classList.toggle('active',view==='3d');
-    const name=S.currentDrug?.medicine_name;
-    if(name) await loadStructure(name,view);
-}
-async function loadStructure(drugName,view){
-    const img=document.getElementById('structImage'),iframe=document.getElementById('structIframe'),
-          placeholder=document.getElementById('structPlaceholder'),spinner=document.getElementById('structSpinner');
-    if(!img||!iframe||!placeholder||!spinner) return;
-    img.style.display='none'; iframe.style.display='none'; placeholder.style.display='none'; spinner.style.display='block';
-    try{
-        if(view==='2d'){
-            const cid=await getCID(drugName);
-            const url=cid?`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/PNG`:`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encodeURIComponent(drugName)}/PNG`;
-            img.src=url;
-            img.onload=()=>{ spinner.style.display='none'; img.style.display='block'; };
-            img.onerror=()=>{ spinner.style.display='none'; placeholder.style.display='block'; placeholder.textContent='Could not load 2D structure.'; };
-        }else{
-            spinner.style.display='none';
-            const cid=await getCID(drugName);
-            iframe.src=cid?`https://pubchem.ncbi.nlm.nih.gov/compound/${cid}#section=3D-Conformer&embed=true`:`https://pubchem.ncbi.nlm.nih.gov/compound/${encodeURIComponent(drugName)}#section=3D-Conformer&embed=true`;
-            iframe.style.display='block';
-        }
-    }catch(err){ spinner.style.display='none'; placeholder.style.display='block'; placeholder.textContent='Error: '+err.message; }
-}
-async function getCID(drugName){
-    try{
-        const r=await fetch(`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encodeURIComponent(drugName)}/cids/JSON`);
-        const d=await r.json();
-        return d?.IdentifierList?.CID?.[0]||null;
-    }catch(e){return null;}
+// Override setMode to switch between cached data
+const _origSetMode = window.setMode;
+function setMode(m){
+    S.mode=m; saveMode(); updateModeUI();
+    if(S.currentDrug){
+        const d = m === 'professional' ? S.currentDrug : (S.currentDrugLay || S.currentDrug);
+        renderDrugPage(d);
+    }
 }
 
 // ─── DRUG HERO ──────────────────────────────────────
 function buildDrugHero(d){
     const name=d.medicine_name||'Unknown',aliases=(d.aliases||[]).slice(0,4).join(' · '),cls=d.drug_class||'';
-    function getStructSVG(){
-        const hue=Math.abs(name.charCodeAt(0)*137+(name.charCodeAt(1)||0)*29)%360;
-        const c1=`hsl(${hue},90%,60%)`;
-        return `<rect x="20" y="28" width="70" height="50" rx="24" ry="24" fill="none" stroke="${c1}" stroke-width="2.5" opacity="0.6"/>
-        <circle cx="40" cy="53" r="12" fill="none" stroke="${c1}" stroke-width="2" opacity="0.4"/>
-        <circle cx="70" cy="53" r="12" fill="none" stroke="${c1}" stroke-width="2" opacity="0.4"/>
-        <line x1="52" y1="53" x2="58" y2="53" stroke="${c1}" stroke-width="2.5"/>
-        <circle cx="40" cy="53" r="4" fill="${c1}" opacity="0.25"/>
-        <circle cx="70" cy="53" r="4" fill="${c1}" opacity="0.25"/>
-        <text x="32" y="92" font-size="8" fill="var(--text3)" opacity="0.6">💊 ${esc(name.split(' ')[0])}</text>`;
-    }
-    return `<div class="drug-hero"><div class="drug-hero-inner"><div class="drug-row">
-    <div class="drug-struct" onclick="viewStructure('${esc(name)}')" title="Click to view structure"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">${getStructSVG()}</svg><span class="zoom-hint">🔍</span></div>
-    <div class="drug-info">
-      <div class="drug-name">${esc(name)}</div>
-      ${aliases?`<div class="drug-alias">${esc(aliases)}</div>`:''}
-      <div class="drug-class">${esc(cls)}</div>
-      <div class="drug-tags">
-        <span class="drug-tag tag-indigo">Rx</span>
-        ${/antibiotic|antibacterial/i.test(cls)?'<span class="drug-tag tag-amber">Antibiotic</span>':''}
-        ${/arb|ace|antihypertensive|calcium channel|beta.block/i.test(cls)?'<span class="drug-tag tag-rose">Antihypertensive</span>':''}
-        ${/antidiabetic|insulin|biguanide|sulfonylurea/i.test(cls)?'<span class="drug-tag tag-emerald">Antidiabetic</span>':''}
-        ${/ppi|proton pump/i.test(cls)?'<span class="drug-tag tag-amber">Acid Reducer</span>':''}
-        ${/nsaid/i.test(cls)?'<span class="drug-tag tag-rose">NSAID</span>':''}
+    return `<div class="drug-hero"><div class="drug-hero-inner">
+    <div class="drug-row">
+      <div class="drug-info">
+        <div class="drug-name">${esc(name)}</div>
+        ${aliases?`<div class="drug-alias">${esc(aliases)}</div>`:''}
+        <div class="drug-class">${esc(cls)}</div>
+        <div class="drug-tags">
+          <span class="drug-tag tag-indigo">Rx</span>
+          ${/antibiotic|antibacterial/i.test(cls)?'<span class="drug-tag tag-amber">Antibiotic</span>':''}
+          ${/arb|ace|antihypertensive|calcium channel|beta.block/i.test(cls)?'<span class="drug-tag tag-rose">Antihypertensive</span>':''}
+          ${/antidiabetic|insulin|biguanide|sulfonylurea/i.test(cls)?'<span class="drug-tag tag-emerald">Antidiabetic</span>':''}
+          ${/ppi|proton pump/i.test(cls)?'<span class="drug-tag tag-amber">Acid Reducer</span>':''}
+          ${/nsaid/i.test(cls)?'<span class="drug-tag tag-rose">NSAID</span>':''}
+        </div>
       </div>
-    </div></div>
+    </div>
     <div class="drug-actions">
       <button class="drug-act primary-act" onclick="doGenerateMCQ()">📋 <span>MCQs</span></button>
       <button class="drug-act" onclick="doExportPDF()">⬇ <span>PDF</span></button>
@@ -884,27 +855,17 @@ function buildDrugHero(d){
     </div></div></div>`;
 }
 
-// ─── TABS ────────────────────────────────────────────
-function buildDrugTabs(){
-    const tabs=['Overview','Uses','Mechanism','PK/PD','Adverse','Contra','Dosing','Interactions','Brands','Pregnancy','Case','FAQ','Structure','References'];
-    return `<div class="drug-tabs">${tabs.map((t,i)=>`<span class="drug-tab" onclick="switchTab(${i})">${t}</span>`).join('')}</div>`;
-}
-function switchTab(idx){
-    document.querySelectorAll('.drug-tab').forEach((el,i)=>el.classList.toggle('active',i===idx));
-    document.querySelectorAll('.drug-section').forEach((el,i)=>el.classList.toggle('active',i===idx));
-}
-
 // ─── SECTION HELPERS ─────────────────────────────────
 function secCard(accent,emoji,title,body){
-    return `<div class="drug-section"><div class="sec-card"><div class="sec-head"><div class="accent-line" style="background:${accent}"></div><span class="emoji">${emoji}</span><span class="title">${title}</span></div><div class="sec-body">${body}</div></div></div>`;
+    return `<div class="sec-card"><div class="sec-head"><div class="accent-line" style="background:${accent}"></div><span class="emoji">${emoji}</span><span class="title">${title}</span></div><div class="sec-body">${body}</div></div>`;
 }
 function listItems(arr,color){
     if(!arr||!arr.length) return '<p style="color:var(--text3);font-size:14px;">No information available.</p>';
-    return `<ul>${arr.map(i=>`<li><span class="dot" style="background:${color}"></span>${esc(i)}</li>`).join('')}</ul>`;
+    return `<ul>${arr.map(i=>`<li><span class="dot" style="background:${color}"></span><span>${esc(i)}</span></li>`).join('')}</ul>`;
 }
-function buildOverview(d){ const o=d.overview||{}; return secCard('var(--primary-light)','🧬','Overview',`<p style="margin-bottom:10px;">${esc(o.summary||'')}</p>${(o.key_points||[]).length?`<div class="sub-label" style="color:var(--primary-light);">Key Points</div>${listItems(o.key_points,'var(--primary-light)')}`:''}`); }
+function buildOverview(d){ const o=d.overview||{}; return secCard('var(--primary-light)','🧬','Overview',`<p style="margin-bottom:10px;font-size:15px;line-height:1.85;">${esc(o.summary||'')}</p>${(o.key_points||[]).length?`<div class="sub-label" style="color:var(--primary-light);">Key Points</div>${listItems(o.key_points,'var(--primary-light)')}`:''}`); }
 function buildUses(d){ return secCard('#10b981','💉','Therapeutic Uses',listItems(d.therapeutic_uses,'#10b981')); }
-function buildMechanism(d){ return secCard('#7c3aed','⚙','Mechanism of Action',`<p>${esc(d.mechanism_of_action||'')}</p>`); }
+function buildMechanism(d){ return secCard('#7c3aed','⚙','Mechanism of Action',`<p style="font-size:14px;line-height:1.85;">${esc(d.mechanism_of_action||'')}</p>`); }
 function buildPKPD(d){
     const pk=d.pharmacokinetics_pharmacodynamics||{};
     const fields=[['absorption','Absorption'],['distribution','Distribution'],['metabolism','Metabolism'],['elimination','Elimination'],['half_life','Half-Life'],['pharmacodynamics_notes','PD Notes']];
@@ -912,22 +873,22 @@ function buildPKPD(d){
 }
 function buildAdverse(d){
     const ar=d.adverse_reactions||{};
-    return secCard('#f59e0b','⚠️','Adverse Reactions',`<div class="sub-label" style="color:#fbbf24;">Common</div>${listItems(ar.common,'#f59e0b')}<div class="sub-label" style="color:#f472b6;margin-top:12px;">Serious</div>${listItems(ar.serious,'#f472b6')}${(ar.seek_medical_help_when||[]).length?`<div class="sub-label" style="color:#f472b6;margin-top:12px;">Seek Medical Help When</div>${listItems(ar.seek_medical_help_when,'#f472b6')}`:''}`);
+    return secCard('#f59e0b','⚠️','Adverse Reactions',`<div class="sub-label" style="color:#fbbf24;">Common</div>${listItems(ar.common,'#f59e0b')}<div class="sub-label" style="color:#f472b6;margin-top:12px;">Serious / Severe</div>${listItems(ar.serious,'#f472b6')}${(ar.seek_medical_help_when||[]).length?`<div class="sub-label" style="color:#f472b6;margin-top:12px;">Seek Medical Help When</div>${listItems(ar.seek_medical_help_when,'#f472b6')}`:''}`);
 }
 function buildContraindications(d){
     const ci=d.contraindications||{};
-    return secCard('#f472b6','🚫','Contraindications',`<div class="sub-label" style="color:#f472b6;">Absolute</div>${listItems(ci.absolute,'#f472b6')}<div class="sub-label" style="color:#fbbf24;margin-top:12px;">Major Cautions</div>${listItems(ci.cautions,'#f59e0b')}`);
+    return secCard('#f472b6','🚫','Contraindications',`<div class="sub-label" style="color:#f472b6;">Absolute Contraindications</div>${listItems(ci.absolute,'#f472b6')}<div class="sub-label" style="color:#fbbf24;margin-top:12px;">Major Cautions</div>${listItems(ci.cautions,'#f59e0b')}`);
 }
-function buildAdultDosing(d){ return secCard('#3b82f6','💊','Adult Dosing',`${listItems(d.adult_dosing,'#3b82f6')}<p style="font-size:11px;color:var(--text3);margin-top:10px;font-style:italic;">⚠ Verify doses from authoritative references before prescribing.</p>`); }
-function buildPediatricDosing(d){ return secCard('#06b6d4','👶','Pediatric Dosing',`${listItems(d.pediatric_dosing,'#06b6d4')}<p style="font-size:11px;color:var(--text3);margin-top:10px;font-style:italic;">⚠ Weight/age-based dosing must be verified with a qualified prescriber.</p>`); }
+function buildAdultDosing(d){ return secCard('#3b82f6','💊','Adult Dosing',`${listItems(d.adult_dosing,'#3b82f6')}<p style="font-size:11px;color:var(--text3);margin-top:10px;font-style:italic;">⚠ Always verify doses from authoritative references before prescribing.</p>`); }
+function buildPediatricDosing(d){ return secCard('#06b6d4','👶','Pediatric Dosing',`${listItems(d.pediatric_dosing,'#06b6d4')}<p style="font-size:11px;color:var(--text3);margin-top:10px;font-style:italic;">⚠ Weight-based and age-based dosing must be verified with a qualified prescriber.</p>`); }
 function buildInteractions(d){
     const di=d.drug_interactions||{},major=di.major||[],mod=di.moderate||[],notes=di.administration_notes||[];
-    return secCard('#f97316','⚡','Drug Interactions',`${major.length?`<div class="sub-label" style="color:#f472b6;">Major</div>${major.map(i=>`<div class="int-row"><span class="int-badge int-major">MAJOR</span><span class="int-txt">${esc(i)}</span></div>`).join('')}`:''}${mod.length?`<div class="sub-label" style="color:#fbbf24;margin-top:12px;">Moderate</div>${mod.map(i=>`<div class="int-row"><span class="int-badge int-mod">MODERATE</span><span class="int-txt">${esc(i)}</span></div>`).join('')}`:''}${notes.length?`<div class="sub-label" style="margin-top:12px;">Administration Notes</div>${listItems(notes,'#f97316')}`:''}`);
+    return secCard('#f97316','⚡','Drug Interactions',`${major.length?`<div class="sub-label" style="color:#f472b6;">Major Interactions</div>${major.map(i=>`<div class="int-row"><span class="int-badge int-major">MAJOR</span><span class="int-txt">${esc(i)}</span></div>`).join('')}`:''}${mod.length?`<div class="sub-label" style="color:#fbbf24;margin-top:12px;">Moderate Interactions</div>${mod.map(i=>`<div class="int-row"><span class="int-badge int-mod">MODERATE</span><span class="int-txt">${esc(i)}</span></div>`).join('')}`:''}${notes.length?`<div class="sub-label" style="margin-top:12px;">Administration Notes</div>${listItems(notes,'#f97316')}`:''}`);
 }
 function buildPakBrands(d){
     const brands=d.pakistan_brand_names||[];
     const bHTML=brands.length?`<div class="brand-grid">${brands.map(b=>`<div class="brand-card"><div class="bname">${esc(b.brand||'')}</div><div class="bstr">${(b.strengths||[]).join(' · ')}</div><div class="bco">${esc(b.company||'')}</div><div class="btags">${(b.dosage_forms||[]).map(f=>`<span class="btag">${esc(f)}</span>`).join('')}</div></div>`).join('')}</div>`:'<p style="color:var(--text3);font-size:14px;">Brand data not available.</p>';
-    return secCard('#818cf8','🇵🇰','Brand Names in Pakistan',`${bHTML}<p style="font-size:11px;color:var(--text3);margin-top:10px;">Verify brand availability with local formularies.</p>`);
+    return secCard('#818cf8','🇵🇰','Brand Names in Pakistan',`${bHTML}<p style="font-size:11px;color:var(--text3);margin-top:10px;">Verify brand availability with local formularies and DRAP registry.</p>`);
 }
 function buildPregnancy(d){
     const pl=d.pregnancy_lactation||{};
@@ -935,39 +896,109 @@ function buildPregnancy(d){
 }
 function buildRenalHepatic(d){
     const rh=d.renal_hepatic_considerations||{};
-    return secCard('#64748b','🫀','Renal & Hepatic',`<div class="grid-2"><div class="grid-item"><div class="label">Renal Impairment</div><div class="value">${esc(rh.renal||'No specific adjustment noted.')}</div></div><div class="grid-item"><div class="label">Hepatic Impairment</div><div class="value">${esc(rh.hepatic||'No specific adjustment noted.')}</div></div></div>`);
+    return secCard('#64748b','🫀','Renal & Hepatic Considerations',`<div class="grid-2"><div class="grid-item"><div class="label">Renal Impairment</div><div class="value">${esc(rh.renal||'No specific adjustment noted.')}</div></div><div class="grid-item"><div class="label">Hepatic Impairment</div><div class="value">${esc(rh.hepatic||'No specific adjustment noted.')}</div></div></div>`);
 }
-function buildCounseling(d){ return secCard('#84cc16','🗣','Counseling Points',listItems(d.counseling_points,'#84cc16')); }
+function buildCounseling(d){ return secCard('#84cc16','🗣','Patient Counseling Points',listItems(d.counseling_points,'#84cc16')); }
 function buildMonitoring(d){
     const mons=d.monitoring_parameters||[];
-    return secCard('#a855f7','📈','Monitoring Parameters',mons.length?mons.map(m=>`<div class="int-row"><span style="width:6px;height:6px;border-radius:50%;background:#a855f7;flex-shrink:0;margin-top:7px;"></span><span class="int-txt">${esc(m)}</span></div>`).join(''):'<p style="color:var(--text3);font-size:14px;">No monitoring parameters listed.</p>');
+    return secCard('#a855f7','📈','Monitoring Parameters',mons.length?mons.map(m=>`<div class="int-row"><span style="width:6px;height:6px;border-radius:50%;background:#a855f7;flex-shrink:0;margin-top:8px;"></span><span class="int-txt">${esc(m)}</span></div>`).join(''):'<p style="color:var(--text3);font-size:14px;">No monitoring parameters listed.</p>');
 }
 function buildClinicalCase(d){
     const cc=d.related_clinical_case||{};
-    return secCard('#10b981','🏥','Clinical Case',`${cc.scenario?`<div style="background:rgba(16,185,129,0.04);border:1px solid rgba(16,185,129,0.15);border-radius:8px;padding:12px;margin-bottom:10px;"><div class="sub-label" style="color:#34d399;">Scenario</div><p style="font-size:14px;color:var(--text2);line-height:1.7;">${esc(cc.scenario)}</p></div>`:''}${cc.discussion?`<div style="background:rgba(99,102,241,0.04);border:1px solid rgba(99,102,241,0.15);border-radius:8px;padding:12px;margin-bottom:10px;"><div class="sub-label" style="color:#a5b4fc;">Discussion</div><p style="font-size:14px;color:var(--text2);line-height:1.7;">${esc(cc.discussion)}</p></div>`:''}${(cc.pearls||[]).length?`<div class="sub-label" style="color:#34d399;">Clinical Pearls</div>${listItems(cc.pearls,'#10b981')}`:''}`);
+    return secCard('#10b981','🏥','Clinical Case',`${cc.scenario?`<div style="background:rgba(16,185,129,0.04);border:1px solid rgba(16,185,129,0.15);border-radius:8px;padding:12px;margin-bottom:10px;"><div class="sub-label" style="color:#34d399;">Scenario</div><p style="font-size:14px;color:var(--text2);line-height:1.8;">${esc(cc.scenario)}</p></div>`:''}${cc.discussion?`<div style="background:rgba(99,102,241,0.04);border:1px solid rgba(99,102,241,0.15);border-radius:8px;padding:12px;margin-bottom:10px;"><div class="sub-label" style="color:#a5b4fc;">Discussion</div><p style="font-size:14px;color:var(--text2);line-height:1.8;">${esc(cc.discussion)}</p></div>`:''}${(cc.pearls||[]).length?`<div class="sub-label" style="color:#34d399;">Clinical Pearls</div>${listItems(cc.pearls,'#10b981')}`:''}`);
 }
 function buildFAQ(d){
     const faqs=d.faq||[];
-    return secCard('#38bdf8','❓','FAQ',`${faqs.map((f,i)=>`<div class="faq-item"><div class="faq-q" onclick="toggleFaq(${i})"><span>${esc(f.question)}</span><span class="arrow" id="faqArrow${i}">▾</span></div><div class="faq-a" id="faqAns${i}">${esc(f.answer)}</div></div>`).join('')}`);
+    return secCard('#38bdf8','❓','Frequently Asked Questions',`${faqs.map((f,i)=>`<div class="faq-item"><div class="faq-q" onclick="toggleFaq(${i})"><span>${esc(f.question)}</span><span class="arrow" id="faqArrow${i}">▾</span></div><div class="faq-a" id="faqAns${i}">${esc(f.answer)}</div></div>`).join('')}`);
 }
 function toggleFaq(i){ const a=document.getElementById('faqAns'+i),ar=document.getElementById('faqArrow'+i); if(a){const o=a.classList.toggle('open');if(ar)ar.classList.toggle('open',o);} }
-function buildRefs(d){
-    const refs=d.references||[];
-    const REF_URLS={'bnf':'https://bnf.nice.org.uk','fda':'https://www.accessdata.fda.gov','pubmed':'https://pubmed.ncbi.nlm.nih.gov','uptodate':'https://www.uptodate.com','drugbank':'https://go.drugbank.com','medscape':'https://reference.medscape.com','rxlist':'https://www.rxlist.com','drugs.com':'https://www.drugs.com','drap':'https://drap.gov.pk','pubchem':'https://pubchem.ncbi.nlm.nih.gov'};
-    function getUrl(text){ const raw=text.match(/https?:\/\/[^\s,)]+/); if(raw)return raw[0]; const lower=text.toLowerCase(); for(const[k,u]of Object.entries(REF_URLS)){if(lower.includes(k))return u;} return`https://scholar.google.com/scholar?q=${encodeURIComponent(text.substring(0,80))}`; }
-    return secCard('#475569','📚','References & Disclaimer',`${refs.map((r,i)=>`<div class="ref-item"><span class="num">[${i+1}]</span><a href="${getUrl(r)}" target="_blank" rel="noopener noreferrer">${esc(r)}</a></div>`).join('')}<div class="disclaimer-box"><p>⚠ ${esc(d.safety_disclaimer||'Educational use only. Verify from authoritative references.')}</p></div>`);
+
+// ─── STRUCTURE SECTION (PubChem 2D/3D) ───────────────
+function buildStructureSection(d){
+    const name=d.medicine_name||'';
+    const pubchemUrl=`https://pubchem.ncbi.nlm.nih.gov/compound/${encodeURIComponent(name)}`;
+    return `<div class="sec-card">
+        <div class="sec-head"><div class="accent-line" style="background:#a855f7;"></div><span class="emoji">🧪</span><span class="title">Chemical Structure</span><a href="${pubchemUrl}" target="_blank" rel="noopener" style="font-size:11px;color:var(--primary-light);text-decoration:none;border-bottom:1px solid rgba(79,70,229,0.2);margin-left:auto;">PubChem ↗</a></div>
+        <div class="sec-body">
+            <div class="structure-viewer">
+                <div class="toggle-group">
+                    <button class="toggle-btn active" id="struct2D" onclick="switchStructureView('2d')">2D Structure</button>
+                    <button class="toggle-btn" id="struct3D" onclick="switchStructureView('3d')">3D Interactive</button>
+                </div>
+                <div class="img-container" id="structImgContainer">
+                    <div class="placeholder" id="structPlaceholder">Loading 2D structure from PubChem…</div>
+                    <div class="spinner" id="structSpinner"></div>
+                    <img id="structImage" src="" alt="Chemical Structure of ${esc(name)}" />
+                    <iframe id="structIframe" src="" allowfullscreen title="3D structure of ${esc(name)}"></iframe>
+                </div>
+                <div class="viewer-credit">
+                    Source: <a href="${pubchemUrl}" target="_blank" rel="noopener noreferrer">PubChem — ${esc(name)}</a> &nbsp;|&nbsp;
+                    <a href="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encodeURIComponent(name)}/PNG" target="_blank" rel="noopener noreferrer">Download 2D Image</a> &nbsp;|&nbsp;
+                    <a href="${pubchemUrl}#section=3D-Conformer" target="_blank" rel="noopener noreferrer">View 3D on PubChem</a>
+                </div>
+            </div>
+        </div>
+    </div>`;
 }
 
-// ─── VIEW STRUCTURE MODAL ────────────────────────────
-function viewStructure(drugName){
-    if(!S.currentDrug) return;
-    const d=S.currentDrug,name=d.medicine_name||drugName,cls=d.drug_class||'';
-    function getLargeSVG(){ const hue=Math.abs(name.charCodeAt(0)*137+(name.charCodeAt(1)||0)*29)%360,c1=`hsl(${hue},90%,60%)`; return `<rect x="30" y="42" width="140" height="76" rx="40" ry="40" fill="none" stroke="${c1}" stroke-width="3" opacity="0.6"/><circle cx="70" cy="80" r="18" fill="none" stroke="${c1}" stroke-width="2.5" opacity="0.35"/><circle cx="130" cy="80" r="18" fill="none" stroke="${c1}" stroke-width="2.5" opacity="0.35"/><line x1="88" y1="80" x2="112" y2="80" stroke="${c1}" stroke-width="3"/><text x="60" y="142" font-size="14" fill="var(--text3)" opacity="0.5">💊 ${esc(name.split(' ')[0])}</text>`; }
-    const existing=document.getElementById('structModal'); if(existing)existing.remove();
-    const modal=document.createElement('div'); modal.id='structModal'; modal.className='struct-modal';
-    modal.innerHTML=`<div class="box"><button class="close" onclick="this.closest('.struct-modal').remove()">✕</button><div class="sname">${esc(name)}</div><div class="sclass">${esc(cls)}</div><div class="svg-wrap"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">${getLargeSVG()}</svg></div><div class="actions"><button onclick="window.open('https://pubchem.ncbi.nlm.nih.gov/compound/${encodeURIComponent(name)}','_blank')">PubChem ↗</button><button class="primary" onclick="this.closest('.struct-modal').remove()">Close</button></div></div>`;
-    modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});
-    document.body.appendChild(modal);
+let currentStructView='2d';
+async function switchStructureView(view){
+    currentStructView=view;
+    document.getElementById('struct2D')?.classList.toggle('active',view==='2d');
+    document.getElementById('struct3D')?.classList.toggle('active',view==='3d');
+    const name=S.currentDrug?.medicine_name;
+    if(name) await loadStructure(name,view);
+}
+async function loadStructure(drugName,view){
+    const img=document.getElementById('structImage'),
+          iframe=document.getElementById('structIframe'),
+          placeholder=document.getElementById('structPlaceholder'),
+          spinner=document.getElementById('structSpinner');
+    if(!img||!iframe||!placeholder||!spinner) return;
+
+    img.style.display='none';
+    iframe.style.display='none';
+    placeholder.style.display='none';
+    spinner.style.display='block';
+
+    try{
+        const cid=await getCID(drugName);
+        if(view==='2d'){
+            // Use CID-based URL for best quality, fallback to name
+            const url = cid
+                ? `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/PNG?record_type=2d&image_size=large`
+                : `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encodeURIComponent(drugName)}/PNG?record_type=2d&image_size=large`;
+            img.src='';
+            img.onload=()=>{ spinner.style.display='none'; img.style.display='block'; };
+            img.onerror=()=>{ spinner.style.display='none'; placeholder.style.display='block'; placeholder.textContent='Could not load 2D structure from PubChem. The compound may not be indexed.'; };
+            img.src=url;
+        }else{
+            spinner.style.display='none';
+            const embedUrl = cid
+                ? `https://pubchem.ncbi.nlm.nih.gov/compound/${cid}#section=3D-Conformer&embed=true`
+                : `https://pubchem.ncbi.nlm.nih.gov/compound/${encodeURIComponent(drugName)}#section=3D-Conformer&embed=true`;
+            iframe.src=embedUrl;
+            iframe.style.display='block';
+        }
+    }catch(err){
+        spinner.style.display='none';
+        placeholder.style.display='block';
+        placeholder.textContent='Structure loading failed: '+err.message;
+    }
+}
+async function getCID(drugName){
+    try{
+        const r=await fetch(`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encodeURIComponent(drugName)}/cids/JSON`);
+        const d=await r.json();
+        return d?.IdentifierList?.CID?.[0]||null;
+    }catch(e){return null;}
+}
+
+function buildRefs(d){
+    const refs=d.references||[];
+    const REF_URLS={'bnf':'https://bnf.nice.org.uk','fda':'https://www.accessdata.fda.gov','pubmed':'https://pubmed.ncbi.nlm.nih.gov','uptodate':'https://www.uptodate.com','drugbank':'https://go.drugbank.com','medscape':'https://reference.medscape.com','rxlist':'https://www.rxlist.com','drugs.com':'https://www.drugs.com','drap':'https://drap.gov.pk','pubchem':'https://pubchem.ncbi.nlm.nih.gov','who':'https://www.who.int','ahfs':'https://www.ahfsdruginformation.com'};
+    function getUrl(text){ const raw=text.match(/https?:\/\/[^\s,)]+/); if(raw)return raw[0]; const lower=text.toLowerCase(); for(const[k,u]of Object.entries(REF_URLS)){if(lower.includes(k))return u;} return`https://scholar.google.com/scholar?q=${encodeURIComponent(text.substring(0,80))}`; }
+    return secCard('#475569','📚','References & Disclaimer',`${refs.map((r,i)=>`<div class="ref-item"><span class="num">[${i+1}]</span><a href="${getUrl(r)}" target="_blank" rel="noopener noreferrer">${esc(r)}</a></div>`).join('')}<div class="disclaimer-box"><p>⚠ ${esc(d.safety_disclaimer||'Educational use only. Verify from authoritative references.')}</p></div>`);
 }
 
 // ─── MCQ INLINE ─────────────────────────────────────
@@ -975,7 +1006,7 @@ let inlineMCQState={};
 async function doGenerateMCQ(){
     if(!S.currentDrug) return;
     const cont=document.getElementById('mcqCont'); if(!cont) return;
-    cont.innerHTML=`<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-top:8px;"><div style="display:flex;align-items:center;gap:12px;color:var(--text2);font-size:14px;"><div style="width:24px;height:24px;border:2.5px solid var(--border);border-top-color:var(--primary-light);border-radius:50%;animation:spin 0.7s linear infinite;"></div>Generating MCQs for ${esc(S.currentDrug.medicine_name)}…</div></div>`;
+    cont.innerHTML=`<div class="sec-card" style="margin-top:8px;"><div class="sec-body"><div style="display:flex;align-items:center;gap:12px;color:var(--text2);font-size:14px;"><div style="width:24px;height:24px;border:2.5px solid var(--border);border-top-color:var(--primary-light);border-radius:50%;animation:spin 0.7s linear infinite;flex-shrink:0;"></div>Generating MCQs for <strong>${esc(S.currentDrug.medicine_name)}</strong>…</div></div></div>`;
     cont.scrollIntoView({behavior:'smooth',block:'start'});
     inlineMCQState={};
     try{
@@ -987,20 +1018,22 @@ async function doGenerateMCQ(){
         const mcqData=JSON.parse(s!==-1&&e!==-1?raw.slice(s,e+1):raw);
         renderInlineMCQs(mcqData,cont);
     }catch(err){
-        cont.innerHTML=`<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-top:8px;text-align:center;"><div style="color:#f472b6;font-size:14px;">⚠️ MCQ generation failed. Try again.</div><button onclick="doGenerateMCQ()" style="margin-top:10px;padding:6px 18px;background:rgba(79,70,229,0.08);border:1px solid rgba(79,70,229,0.2);border-radius:8px;color:var(--primary-light);cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;">↺ Retry</button></div>`;
+        cont.innerHTML=`<div class="sec-card" style="margin-top:8px;"><div class="sec-body" style="text-align:center;"><div style="color:#f472b6;font-size:14px;">⚠️ MCQ generation failed. Try again.</div><button onclick="doGenerateMCQ()" style="margin-top:10px;padding:6px 18px;background:rgba(79,70,229,0.08);border:1px solid rgba(79,70,229,0.2);border-radius:8px;color:var(--primary-light);cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;">↺ Retry</button></div></div>`;
     }
 }
 function renderInlineMCQs(mcqs,cont){
-    cont.innerHTML=`<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-top:8px;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;"><span style="font-size:20px;">📋</span><span style="font-size:16px;font-weight:700;color:var(--primary-light);">MCQs — ${esc(S.currentDrug.medicine_name)}</span></div>
-    ${mcqs.map((q,qi)=>`<div style="margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border);">
-      <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:10px;">${qi+1}. ${esc(q.question)}</div>
+    cont.innerHTML=`<div class="sec-card" style="margin-top:8px;">
+    <div class="sec-head"><div class="accent-line" style="background:#10b981;"></div><span class="emoji">📋</span><span class="title">MCQs — ${esc(S.currentDrug.medicine_name)}</span></div>
+    <div class="sec-body">
+    ${mcqs.map((q,qi)=>`<div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--border);">
+      <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:10px;line-height:1.6;">${qi+1}. ${esc(q.question)}</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
-        ${Object.entries(q.options||{}).map(([k,v])=>`<button class="mcq-opt-inline" data-qi="${qi}" data-opt="${k}" data-correct="${esc(q.correct)}" onclick="pickInlineMCQ(${qi},'${k}','${esc(q.correct)}','${esc(q.explanation).replace(/'/g,"&#39;")}')" style="padding:8px 12px;background:var(--bg3);border:1.5px solid var(--border);border-radius:8px;color:var(--text2);cursor:pointer;font-size:13px;font-family:'Inter',sans-serif;font-weight:500;text-align:left;transition:all 0.15s;"><strong>${k}.</strong> ${esc(v)}</button>`).join('')}
+        ${Object.entries(q.options||{}).map(([k,v])=>`<button class="mcq-opt-inline" data-qi="${qi}" data-opt="${k}" onclick="pickInlineMCQ(${qi},'${k}','${esc(q.correct)}','${esc(q.explanation).replace(/'/g,"&#39;")}')" style="padding:9px 12px;background:var(--bg3);border:1.5px solid var(--border);border-radius:8px;color:var(--text2);cursor:pointer;font-size:13px;font-family:'Inter',sans-serif;font-weight:500;text-align:left;transition:all 0.15s;"><strong>${k}.</strong> ${esc(v)}</button>`).join('')}
       </div>
       <div style="margin-top:8px;"><button onclick="toggleInlineAns(${qi})" style="font-size:11px;color:var(--primary-light);background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;">▾ Show answer</button><div id="inlineAns${qi}" style="display:none;margin-top:6px;padding:8px 12px;background:rgba(16,185,129,0.05);border:1px solid rgba(16,185,129,0.12);border-radius:8px;font-size:13px;color:#34d399;">✓ Correct: <strong>${esc(q.correct)}</strong> — ${esc(q.explanation)}</div></div>
     </div>`).join('')}
-    <div style="font-size:11px;color:var(--text3);text-align:center;">Click an option to answer</div></div>`;
+    <div style="font-size:11px;color:var(--text3);text-align:center;margin-top:4px;">Click an option to answer, or reveal the answer directly.</div>
+    </div></div>`;
 }
 function pickInlineMCQ(qi,chosen,correct,explanation){
     const key='mcq'+qi; if(inlineMCQState[key]) return; inlineMCQState[key]=true;
@@ -1015,7 +1048,7 @@ function pickInlineMCQ(qi,chosen,correct,explanation){
 }
 function toggleInlineAns(qi){ const el=document.getElementById('inlineAns'+qi); if(!el)return; const o=el.style.display!=='block'; el.style.display=o?'block':'none'; const btn=el.previousElementSibling; if(btn)btn.textContent=o?'▴ Hide answer':'▾ Show answer'; }
 
-// ─── MCQ MODE (FULL PAGE) ────────────────────────────
+// ─── MCQ FULL PAGE ────────────────────────────────────
 function openMCQMode(){
     MCQ.active=true; MCQ.mcqs=[]; MCQ.currentIndex=0; MCQ.score=0; MCQ.answered=false; MCQ.isComplete=false; MCQ.isGenerating=false; MCQ.medicine=''; MCQ.selectedCount=10;
     renderMCQPage();
@@ -1031,7 +1064,7 @@ function renderMCQPage(){
     <div id="mcqQuizContainer"></div></div>`;
     setTimeout(()=>{const inp=document.getElementById('mcqSearchInp');if(inp)inp.focus();},100);
 }
-function exitMCQMode(){ MCQ.active=false; if(S.currentDrug)renderDrugPage(S.currentDrug); else renderLanding(); }
+function exitMCQMode(){ MCQ.active=false; if(S.currentDrug)renderDrugPage(S.mode==='professional'?S.currentDrug:(S.currentDrugLay||S.currentDrug)); else renderLanding(); }
 
 let mcqDebounceTimer,mcqSuggIdx=0;
 async function onMCQInput(val){
@@ -1103,7 +1136,7 @@ function renderMCQQuestion(){
     <div class="qtext">${esc(q.question)}</div><div class="opts" id="mcqOpts">${Object.entries(q.options||{}).map(([k,v])=>`<button class="opt" data-opt="${k}" onclick="answerMCQ(${idx},'${k}')" disabled><span class="lbl">${k}</span><span>${esc(v)}</span></button>`).join('')}</div>
     <div class="fb" id="mcqFB"></div><div class="hint" id="mcqHint">Click an option to answer.</div></div>`;
     setTimeout(()=>{document.querySelectorAll('.mcq-quiz .opt').forEach(el=>el.disabled=false);},30);
-    MCQ.answered=false; MCQ._currentQuestionIdx=idx;
+    MCQ.answered=false;
 }
 function answerMCQ(idx,choice){
     if(MCQ.answered||MCQ.isComplete||idx!==MCQ.currentIndex) return;
@@ -1115,37 +1148,31 @@ function answerMCQ(idx,choice){
         if(opt===choice&&isCorrect){el.classList.add('correct');el.style.borderColor='var(--accent)';el.style.background='rgba(16,185,129,0.08)';el.style.color='#34d399';}
     });
     const fb=document.getElementById('mcqFB');
-    if(fb){ if(isCorrect){fb.className='fb correct';fb.innerHTML=`✅ <strong>Correct!</strong> ${esc(q.explanation)}`;MCQ.score++;}else{fb.className='fb wrong';fb.innerHTML=`❌ <strong>Wrong.</strong> Correct answer is <strong>${correct}</strong>.<br/><span class="explain">${esc(q.explanation)}</span>`;} }
+    if(fb){ if(isCorrect){fb.className='fb correct';fb.innerHTML=`✅ <strong>Correct!</strong> ${esc(q.explanation)}`;MCQ.score++;}else{fb.className='fb wrong';fb.innerHTML=`❌ <strong>Incorrect.</strong> Correct answer is <strong>${correct}</strong>.<br/><span class="explain">${esc(q.explanation)}</span>`;} }
     MCQ.answered=true;
     const scoreEl=document.querySelector('.mcq-quiz .score');
     if(scoreEl) scoreEl.innerHTML=`🎯 ${MCQ.score} <span>/ ${idx+1} answered</span>`;
     const hint=document.getElementById('mcqHint');
-    if(hint) hint.textContent=isCorrect?'✅ Correct! Moving to next…':'❌ Showing correct answer…';
+    if(hint) hint.textContent=isCorrect?'✅ Correct! Moving to next question…':'❌ Showing correct answer…';
     if(mcqTimeoutId) clearTimeout(mcqTimeoutId);
-    mcqTimeoutId=setTimeout(()=>{mcqTimeoutId=null;MCQ.currentIndex++;if(MCQ.currentIndex>=MCQ.mcqs.length){MCQ.isComplete=true;}renderMCQQuestion();},isCorrect?700:1100);
+    mcqTimeoutId=setTimeout(()=>{mcqTimeoutId=null;MCQ.currentIndex++;if(MCQ.currentIndex>=MCQ.mcqs.length){MCQ.isComplete=true;}renderMCQQuestion();},isCorrect?700:1200);
 }
 function renderMCQResults(container){
     const total=MCQ.mcqs.length,score=MCQ.score,pct=total?Math.round((score/total)*100):0;
     let msg='',emoji='';
-    if(pct>=90){msg="Excellent! You're a pharmacology star! 🌟";emoji='🏆';}
-    else if(pct>=70){msg='Great job! Keep mastering! 💪';emoji='📚';}
-    else if(pct>=50){msg='Keep reviewing the topics you missed. 📖';emoji='🤔';}
-    else{msg='Keep studying! Try again to improve. 🔄';emoji='🧠';}
-    container.innerHTML=`<div class="mcq-quiz"><div class="mcq-results"><div style="font-size:48px;margin-bottom:6px;">${emoji}</div><div class="big">${score}/${total}</div><div class="sub">${pct}% correct</div><div class="msg">${msg}</div><div class="sub" style="font-size:13px;margin-top:2px;">${MCQ.medicine?`Quiz on <strong>${esc(MCQ.medicine)}</strong>`:''}</div><div class="actions"><button class="primary" onclick="generateMCQs()">🔄 Try Again</button><button onclick="openMCQMode()">📝 New Quiz</button><button onclick="exitMCQMode()">← Back</button></div></div></div>`;
+    if(pct>=90){msg='Outstanding performance! You have mastered this topic.';emoji='🏆';}
+    else if(pct>=70){msg='Good result. Continue reinforcing key concepts.';emoji='📚';}
+    else if(pct>=50){msg='Adequate performance. Review the topics you missed.';emoji='🤔';}
+    else{msg='Further study required. Revisit the material and try again.';emoji='🧠';}
+    container.innerHTML=`<div class="mcq-quiz"><div class="mcq-results"><div style="font-size:48px;margin-bottom:6px;">${emoji}</div><div class="big">${score}/${total}</div><div class="sub">${pct}% correct</div><div class="msg">${msg}</div><div class="sub" style="font-size:13px;margin-top:2px;">${MCQ.medicine?`Quiz on <strong>${esc(MCQ.medicine)}</strong>`:''}</div><div class="actions"><button class="primary" onclick="generateMCQs()">🔄 Retry Quiz</button><button onclick="openMCQMode()">📝 New Topic</button><button onclick="exitMCQMode()">← Back</button></div></div></div>`;
 }
 
-// ─── COMPARE PAGE (NEW FULL-PAGE LAYOUT) ─────────────
+// ─── COMPARE PAGE ─────────────────────────────────
 let cmpDebounceA,cmpDebounceB,cmpSuggIdxA=-1,cmpSuggIdxB=-1;
 let _comparePrefilledA='';
 
-function openComparePage(){
-    _comparePrefilledA='';
-    renderComparePage();
-}
-function openComparePageWith(name){
-    _comparePrefilledA=name;
-    renderComparePage();
-}
+function openComparePage(){ _comparePrefilledA=''; renderComparePage(); }
+function openComparePageWith(name){ _comparePrefilledA=name; renderComparePage(); }
 function renderComparePage(){
     const c=document.getElementById('mainContent');
     c.innerHTML=`<div class="compare-container">
@@ -1181,20 +1208,16 @@ function renderComparePage(){
       </div>
       <div id="compareResultArea"></div>
     </div>`;
-    if(_comparePrefilledA){
-        setTimeout(()=>{const inp=document.getElementById('cmpBInp');if(inp)inp.focus();},100);
-    }else{
-        setTimeout(()=>{const inp=document.getElementById('cmpAInp');if(inp)inp.focus();},100);
-    }
+    if(_comparePrefilledA){ setTimeout(()=>{const inp=document.getElementById('cmpBInp');if(inp)inp.focus();},100); }
+    else{ setTimeout(()=>{const inp=document.getElementById('cmpAInp');if(inp)inp.focus();},100); }
 }
-function exitComparePage(){ if(S.currentDrug)renderDrugPage(S.currentDrug);else renderLanding(); }
+function exitComparePage(){ if(S.currentDrug)renderDrugPage(S.mode==='professional'?S.currentDrug:(S.currentDrugLay||S.currentDrug));else renderLanding(); }
 function quickCompare(a,b){
     const ia=document.getElementById('cmpAInp'),ib=document.getElementById('cmpBInp');
     if(ia)ia.value=a; if(ib)ib.value=b;
     ['cmpSuggA','cmpSuggB'].forEach(id=>{const d=document.getElementById(id);if(d)d.style.display='none';});
     doCompareDrugs();
 }
-
 async function onCompareInput(which,val){
     const dropId=which==='A'?'cmpSuggA':'cmpSuggB';
     const drop=document.getElementById(dropId); if(!drop) return;
@@ -1229,7 +1252,6 @@ function onCompareKey(e,which){
     if(which==='A')cmpSuggIdxA=idx;else cmpSuggIdxB=idx;
     items.forEach((it,i)=>it.classList.toggle('sel',i===idx));
 }
-
 async function doCompareDrugs(){
     const nameA=document.getElementById('cmpAInp')?.value.trim(),nameB=document.getElementById('cmpBInp')?.value.trim();
     if(!nameA||!nameB){alert('Please enter both drug names.');return;}
@@ -1261,7 +1283,7 @@ async function doCompareDrugs(){
         result.innerHTML=`<div class="compare-result-box">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
             <span style="font-size:20px;">⚖</span>
-            <span style="font-size:16px;font-weight:700;color:var(--text);">Comparison Result</span>
+            <span style="font-size:16px;font-weight:700;color:var(--text);">Comparison: ${esc(cmp.drug_a||nameA)} vs ${esc(cmp.drug_b||nameB)}</span>
             <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;">
               <button onclick="doSearch('${esc(cmp.drug_a||nameA)}')" style="padding:5px 14px;background:rgba(79,70,229,0.06);border:1px solid rgba(79,70,229,0.15);border-radius:8px;color:var(--primary-light);cursor:pointer;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;">Open ${esc(cmp.drug_a||nameA)} ↗</button>
               <button onclick="doSearch('${esc(cmp.drug_b||nameB)}')" style="padding:5px 14px;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);border-radius:8px;color:var(--secondary);cursor:pointer;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;">Open ${esc(cmp.drug_b||nameB)} ↗</button>
@@ -1291,7 +1313,7 @@ function openPillFinder(){
     c.innerHTML=`<div class="pill-finder">
       <div class="header"><span class="icon">💊</span><span class="title">Pill Identifier</span><span class="badge">AI-Powered</span></div>
       <div class="box">
-        <p>Enter the physical appearance of the pill (shape, color, markings, size):</p>
+        <p>Enter the physical appearance of the pill — shape, color, imprint, or markings:</p>
         <div class="search-row">
           <input id="pillDesc" type="text" placeholder="e.g. round, white, scored, 500" onkeydown="if(event.key==='Enter') identifyPill()" />
           <button onclick="identifyPill()">Identify →</button>
@@ -1329,7 +1351,7 @@ async function identifyPill(){
           ${result.warning?`<div style="margin-top:8px;padding:6px 12px;background:rgba(245,158,11,0.06);border-left:3px solid var(--secondary);border-radius:4px;font-size:11px;color:rgba(245,158,11,0.8);">⚠️ ${esc(result.warning)}</div>`:''}
           <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">
             <button onclick="doSearch('${esc(result.name)}');" style="padding:4px 14px;background:rgba(79,70,229,0.06);border:1px solid rgba(79,70,229,0.15);border-radius:6px;color:var(--primary-light);cursor:pointer;font-size:11px;font-weight:600;">🔍 Full Details</button>
-            <button onclick="document.getElementById('pillDesc').value='';document.getElementById('pillResult').innerHTML='';document.getElementById('pillDesc').focus();" style="padding:4px 14px;background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--text3);cursor:pointer;font-size:11px;">↺ New</button>
+            <button onclick="document.getElementById('pillDesc').value='';document.getElementById('pillResult').innerHTML='';document.getElementById('pillDesc').focus();" style="padding:4px 14px;background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--text3);cursor:pointer;font-size:11px;">↺ New Search</button>
           </div>
         </div>`;
     }catch(err){
@@ -1347,7 +1369,6 @@ function toggleFavorite(name){
     const btn=document.querySelector('.fav-act');
     if(btn){ const isFav=isFavorite(name); btn.textContent=isFav?'⭐':'☆'; btn.classList.toggle('not-fav',!isFav); btn.style.transform='scale(1.3)'; setTimeout(()=>{btn.style.transform='';},300); }
 }
-
 function trackSearch(name){
     try{
         let counts=JSON.parse(localStorage.getItem('pharma_counts')||'{}');
@@ -1403,7 +1424,7 @@ function doExportPDF(){
     <h2>Mechanism</h2><p>${esc(d.mechanism_of_action||'')}</p>
     <h2>Adult Dosing</h2><ul>${(d.adult_dosing||[]).map(dd=>`<li>${esc(dd)}</li>`).join('')}</ul>
     <h2>Adverse Reactions</h2><ul>${(d.adverse_reactions?.common||[]).map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
-    <h2>Brands in Pakistan</h2>${(d.pakistan_brand_names||[]).map(b=>`<span class="brand"><strong>${esc(b.brand)}</strong> ${(b.strengths||[]).join('/')} — ${esc(b.company)}</span>`).join(' ')}
+    <h2>Pakistan Brands</h2>${(d.pakistan_brand_names||[]).map(b=>`<span class="brand"><strong>${esc(b.brand)}</strong> ${(b.strengths||[]).join('/')} — ${esc(b.company)}</span>`).join(' ')}
     <div class="disc">⚠ ${esc(d.safety_disclaimer||'Educational use only.')}</div>
     <div class="footer">PharmaPulse by Rabi — Pakistan Drug Intelligence</div></body></html>`);
     win.document.close();
@@ -1413,15 +1434,23 @@ function doPrint(){ window.print(); }
 function doSpeak(){
     if(!S.currentDrug) return;
     window.speechSynthesis.cancel();
-    const d=S.currentDrug,txt=`${d.medicine_name}. ${d.drug_class}. ${d.overview?.summary||''}`;
-    const utt=new SpeechSynthesisUtterance(txt); utt.rate=0.85; utt.lang='en-US';
+    const d=S.currentDrug;
+    const txt=`${d.medicine_name}. ${d.drug_class}. ${d.overview?.summary||''} Key uses include: ${(d.therapeutic_uses||[]).slice(0,3).join(', ')}.`;
+    const utt=new SpeechSynthesisUtterance(txt);
+    utt.rate=0.88;
+    utt.pitch=1.05;
+    utt.lang='en-US';
+    // Try to pick a pleasant voice
+    const voices=window.speechSynthesis.getVoices();
+    const pref=voices.find(v=>v.lang==='en-US'&&/Google|Samantha|Alex|Karen/i.test(v.name));
+    if(pref) utt.voice=pref;
     window.speechSynthesis.speak(utt);
 }
 function doCopy(){
     if(!S.currentDrug) return;
     const d=S.currentDrug;
     const txt=[`${d.medicine_name}`,`Class: ${d.drug_class}`,``,d.overview?.summary||'',``,`Uses: ${(d.therapeutic_uses||[]).slice(0,4).join(', ')}`,``,`Pakistan Brands: ${(d.pakistan_brand_names||[]).slice(0,3).map(b=>b.brand).join(', ')}`,``,`— PharmaPulse by Rabi · Pakistan Drug Intelligence`].join('\n');
-    navigator.clipboard.writeText(txt).then(()=>alert('Summary copied!')).catch(()=>prompt('Copy this text:',txt));
+    navigator.clipboard.writeText(txt).then(()=>alert('Summary copied to clipboard!')).catch(()=>prompt('Copy this text:',txt));
 }
 
 // ─── UTILITY ─────────────────────────────────────────
@@ -1434,19 +1463,20 @@ window.openStatsModal=openStatsModal; window.closeStatsModal=closeStatsModal;
 window.openComparePage=openComparePage; window.openComparePageWith=openComparePageWith;
 window.exitComparePage=exitComparePage; window.doCompareDrugs=doCompareDrugs;
 window.onCompareInput=onCompareInput; window.onCompareKey=onCompareKey; window.selectCompareItem=selectCompareItem; window.quickCompare=quickCompare;
-window.viewStructure=viewStructure; window.doGenerateMCQ=doGenerateMCQ;
+window.doGenerateMCQ=doGenerateMCQ;
 window.doExportPDF=doExportPDF; window.doPrint=doPrint; window.doSpeak=doSpeak; window.doCopy=doCopy;
 window.toggleFavorite=toggleFavorite; window.openFavItem=openFavItem; window.removeFav=removeFav; window.openFromHist=openFromHist;
 window.triggerNavSearch=triggerNavSearch; window.onNavInput=onNavInput; window.onNavKey=onNavKey; window.selectSuggAndSearch=selectSuggAndSearch;
-window.switchTab=switchTab; window.toggleFaq=toggleFaq;
+window.toggleFaq=toggleFaq;
 window.pickInlineMCQ=pickInlineMCQ; window.toggleInlineAns=toggleInlineAns;
 window.openMCQMode=openMCQMode; window.exitMCQMode=exitMCQMode; window.onMCQInput=onMCQInput; window.onMCQKey=onMCQKey;
 window.selectMCQItem=selectMCQItem; window.setMCQCount=setMCQCount; window.generateMCQs=generateMCQs; window.answerMCQ=answerMCQ;
 window.openPillFinder=openPillFinder; window.identifyPill=identifyPill;
 window.switchStructureView=switchStructureView; window.loadStructure=loadStructure;
 window.switchDrawerToHistory=switchDrawerToHistory; window.switchDrawerToFavs=switchDrawerToFavs; window.updateMobileModeUI=updateMobileModeUI;
+window.saveHistory=saveHistory;
 
-console.log('✅ PharmaPulse by Rabi — All fixes applied!');
+console.log('✅ PharmaPulse by Rabi — All updates applied!');
 </script>
 </body>
 </html>
