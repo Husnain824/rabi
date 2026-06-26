@@ -1010,7 +1010,7 @@ async function loadStructure(drugName,view){
             iframe.src=embedUrl;
             iframe.style.display='block';
             placeholder.style.display='block';
-            placeholder.innerHTML='<span style="font-size:12px;color:var(--text3);">Loading 3D… If it doesn\'t appear, <a href="'+pubchemLink+'" target="_blank" rel="noopener" style="color:var(--primary-light);">open on PubChem ↗</a></span>';
+            placeholder.innerHTML='<span style="font-size:12px;color:var(--text3);">Loading 3D… If it doesn\'t appear,</span>';
         }
     }catch(err){
         spinner.style.display='none';
